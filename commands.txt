@@ -1,0 +1,21 @@
+🔧 Commands Used in Task 4
+
+| 🧾 Command                                 | 💡 Purpose / Use |
+|------------------------------------------- |------------------|
+
+| sudo apt install ufw -y                    | UFW firewall ko install karne ke liye |
+| sudo ufw status                            | UFW abhi active hai ya inactive – check karne ke liye |
+| sudo ufw enable                            | UFW firewall ko activate (enable) karne ke liye |
+| sudo ufw status verbose                    | Detail me firewall rules dekhne ke liye |
+| sudo ufw deny 23                           | Telnet (port 23) ko block karne ke liye |
+| sudo apt install telnet -y                 | Telnet client install karne ke liye (port block test ke liye) |
+| telnet localhost 23                        | Port 23 block hua ya nahi – test karne ke liye |
+| sudo ufw allow 22                          | SSH (port 22) allow karne ke liye |
+| sudo apt install openssh-server -y         | SSH server install karne ke liye (localhost pe test ke liye) |
+| sudo systemctl start ssh                   | SSH service ko start karne ke liye |
+| sudo systemctl enable ssh                  | SSH ko auto-start pe daalne ke liye (optional) |
+| ssh localhost                              | SSH port test karne ke liye (check if connection works) |
+| sudo systemctl stop ssh                    | SSH service ko band karne ke liye (cleanup ke liye) |
+| sudo ufw delete deny 23                    | Telnet block rule ko remove karne ke liye |
+| sudo apt remove --purge ufw -y             | Task ke baad UFW ko uninstall karne ke liye |
+| sudo apt autoremove -y                     | Extra packages hatane ke liye |
