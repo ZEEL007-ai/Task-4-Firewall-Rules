@@ -1,0 +1,22 @@
+# 🔧 Commands Used – UFW Firewall Task
+
+|-------------------------------------------|--------------------------------------------------------|
+| 💻 Command                                | 📘 Description                                        |
+|-------------------------------------------|--------------------------------------------------------|
+| sudo apt install ufw -y                   | Installs UFW firewall on the system                    |
+| sudo ufw status                           | Checks whether the firewall is active or inactive      |
+| sudo ufw enable                           | Enables the UFW firewall                               |
+| sudo ufw status verbose                   | Displays detailed firewall rules and status            |
+| sudo ufw deny 23                          | Blocks inbound traffic on port 23 (used by Telnet)     |
+| sudo apt install telnet -y                | Installs the Telnet tool for testing blocked port      |
+| telnet localhost 23                       | Tests if port 23 is blocked properly                   |
+| sudo ufw allow 22                         | Allows inbound traffic on port 22 (used by SSH)        |
+| sudo apt install openssh-server -y        | Installs SSH server for testing SSH connection         |
+| sudo systemctl start ssh                  | Starts the SSH service                                 |
+| sudo systemctl enable ssh                 | Enables SSH to start automatically on boot             |
+| ssh localhost                             | Tests SSH connection to localhost                      |
+| sudo systemctl stop ssh                   | Stops the SSH service (optional cleanup)               |
+| sudo ufw delete deny 23                   | Removes the firewall rule that blocked port 23         |
+| sudo apt remove --purge ufw -y            | Uninstalls UFW from the system (after task completion) |
+| sudo apt autoremove -y                    | Removes unused dependencies or leftover packages       |
+|-------------------------------------------|--------------------------------------------------------| 
